@@ -1,0 +1,157 @@
+:root{
+  --accent: #0f766e;
+  --accent-dark: #0b5c56;
+  --text: #17212b;
+  --muted: #5b6b78;
+  --bg: #f7f9fa;
+  --card-bg: #ffffff;
+  --border: #e2e8ea;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+a{
+  color: inherit;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+nav a:hover{
+  color: var(--accent);
+}
+
+.header-icons{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-icons input[type="search"]{
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  min-width: 180px;
+}
+
+.header-icons a{
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+#cart-count{
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 7px;
+  font-size: 0.75rem;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 12px 24px;
+  min-height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn:hover{
+  background: var(--accent-dark);
+}
+.hero{
+  background: linear-gradient(rgba(15,23,29,0.45), rgba(15,23,29,0.45)),
+              url("../images/banners/hero.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 24px;
+}
+
+.hero h1{
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.hero p{
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #f0f0f0;
+}
+footer{
+  background: var(--text);
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+footer p{
+  margin-bottom: 8px;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.social a{
+  color: #fff;
+  text-decoration: none;
+}
