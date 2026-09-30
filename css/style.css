@@ -299,3 +299,99 @@ footer p{
   border-radius: 8px;
   min-width: 240px;
 }
+.card{
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.15s;
+}
+
+.card:hover{
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.card img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body{
+  padding: 14px;
+}
+
+.card-name{
+  display: block;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.card-rating{
+  color: #f59e0b;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.card-rating span{
+  color: var(--muted);
+}
+
+.card-price{
+  margin-bottom: 6px;
+}
+
+.card-price .sale{
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.card-price .original{
+  text-decoration: line-through;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-right: 6px;
+}
+
+.card-price .discount{
+  color: #16a34a;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.stock{
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.stock.in-stock{ color: #16a34a; }
+.stock.out-stock{ color: #dc2626; }
+
+.card-actions{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.card-actions .btn{
+  flex: 1;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.card-actions .btn:disabled{
+  background: var(--muted);
+  cursor: not-allowed;
+}
+
+.wishlist-btn{
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
