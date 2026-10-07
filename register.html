@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | UrbanCart</title>
+  <meta name="description" content="Register for a new UrbanCart account.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%230f766e%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22%3EU%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">UrbanCart</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="shop.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <input type="search" id="global-search" placeholder="Search products...">
+      <a href="account.html">Account</a>
+      <a href="wishlist.html">Wishlist <span id="wishlist-count" class="badge">0</span></a>
+      <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="auth-box container">
+      <h1>Create Account</h1>
+      <form id="register-form" novalidate>
+        <label>Full Name
+          <input type="text" id="reg-name">
+          <span class="field-error" id="err-reg-name"></span>
+        </label>
+        <label>Email
+          <input type="email" id="reg-email">
+          <span class="field-error" id="err-reg-email"></span>
+        </label>
+        <label>Mobile Number
+          <input type="text" id="reg-mobile" placeholder="10-digit number">
+          <span class="field-error" id="err-reg-mobile"></span>
+        </label>
+        <label>Password
+          <input type="password" id="reg-password">
+          <span class="field-error" id="err-reg-password"></span>
+        </label>
+        <label>Confirm Password
+          <input type="password" id="reg-confirm">
+          <span class="field-error" id="err-reg-confirm"></span>
+        </label>
+        <button type="submit" class="btn">Create Account</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UrbanCart. All rights reserved.</p>
+    <p>Email: support@urbancart.com | Phone: +91 98765 43210 | Address: 12 MG Road, Bengaluru, India</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

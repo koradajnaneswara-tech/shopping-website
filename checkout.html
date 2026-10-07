@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | UrbanCart</title>
+  <meta name="description" content="Complete your order with delivery details and a simulated payment.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%230f766e%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22%3EU%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">UrbanCart</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="shop.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <input type="search" id="global-search" placeholder="Search products...">
+      <a href="account.html">Account</a>
+      <a href="wishlist.html">Wishlist <span id="wishlist-count" class="badge">0</span></a>
+      <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+    </div>
+  </header>
+  <main>
+    <h1 class="container">Checkout</h1>
+    <div class="checkout-layout container" id="checkout-page">
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <h3>Customer Information</h3>
+        <label>Full Name
+          <input type="text" id="full-name">
+          <span class="field-error" id="err-full-name"></span>
+        </label>
+        <label>Mobile Number
+          <input type="text" id="mobile" placeholder="10-digit number">
+          <span class="field-error" id="err-mobile"></span>
+        </label>
+        <label>Email
+          <input type="email" id="email">
+          <span class="field-error" id="err-email"></span>
+        </label>
+
+        <h3>Delivery Address</h3>
+        <label>House / Flat No.
+          <input type="text" id="house">
+          <span class="field-error" id="err-house"></span>
+        </label>
+        <label>Street
+          <input type="text" id="street">
+          <span class="field-error" id="err-street"></span>
+        </label>
+        <div class="form-row">
+          <label>City
+            <input type="text" id="city">
+            <span class="field-error" id="err-city"></span>
+          </label>
+          <label>State
+            <input type="text" id="state">
+            <span class="field-error" id="err-state"></span>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>PIN Code
+            <input type="text" id="pincode" placeholder="6-digit code">
+            <span class="field-error" id="err-pincode"></span>
+          </label>
+          <label>Country
+            <input type="text" id="country" value="India">
+            <span class="field-error" id="err-country"></span>
+          </label>
+        </div>
+
+        <h3>Payment Method</h3>
+        <p class="note">This is a simulated checkout for a student project — no real payment is processed. Use test data only.</p>
+        <div class="payment-options">
+          <label><input type="radio" name="payment" value="upi" checked> UPI</label>
+          <label><input type="radio" name="payment" value="card"> Credit / Debit Card</label>
+          <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+        </div>
+
+        <div id="upi-fields" class="payment-fields">
+          <label>UPI ID
+            <input type="text" id="upi-id" placeholder="yourname@bank">
+            <span class="field-error" id="err-upi-id"></span>
+          </label>
+        </div>
+
+        <div id="card-fields" class="payment-fields" style="display:none">
+          <label>Card Number (test data only)
+            <input type="text" id="card-number" placeholder="16-digit number">
+            <span class="field-error" id="err-card-number"></span>
+          </label>
+          <div class="form-row">
+            <label>Expiry
+              <input type="text" id="card-expiry" placeholder="MM/YY">
+              <span class="field-error" id="err-card-expiry"></span>
+            </label>
+            <label>CVV
+              <input type="text" id="card-cvv" placeholder="123">
+              <span class="field-error" id="err-card-cvv"></span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+
+      <div id="checkout-summary" class="order-summary"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UrbanCart. All rights reserved.</p>
+    <p>Email: support@urbancart.com | Phone: +91 98765 43210 | Address: 12 MG Road, Bengaluru, India</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

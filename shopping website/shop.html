@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products  Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+  <a href="index.html" class="logo">UrbanCart</a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html">Categories</a>
+    <a href="shop.html">Offers</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="header-icons">
+    <input type="search" placeholder="Search products...">
+    <a href="account.html">Account</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="cart.html">Cart <span id="cart-count">0</span></a>
+  </div>
+</header>
+  <main>
+  <h1>Shop All Products</h1>
+
+  <div class="shop-layout container">
+
+    <aside class="filters">
+      <h3>Search</h3>
+      <input type="search" id="search-input" placeholder="Search products...">
+
+      <h3>Category</h3>
+      <div id="category-filters">
+        <label><input type="radio" name="category" value="all" checked> All</label>
+        <label><input type="radio" name="category" value="Electronics"> Electronics</label>
+        <label><input type="radio" name="category" value="Fashion"> Fashion</label>
+        <label><input type="radio" name="category" value="Footwear"> Footwear</label>
+        <label><input type="radio" name="category" value="Home & Living"> Home & Living</label>
+        <label><input type="radio" name="category" value="Beauty"> Beauty</label>
+        <label><input type="radio" name="category" value="Accessories"> Accessories</label>
+      </div>
+
+      <h3>Price</h3>
+      <div id="price-filters">
+        <label><input type="radio" name="price" value="all" checked> All</label>
+        <label><input type="radio" name="price" value="0-1000"> ₹0 – ₹1,000</label>
+        <label><input type="radio" name="price" value="1000-5000"> ₹1,000 – ₹5,000</label>
+        <label><input type="radio" name="price" value="5000-10000"> ₹5,000 – ₹10,000</label>
+        <label><input type="radio" name="price" value="10000-999999"> ₹10,000+</label>
+      </div>
+
+      <h3>Rating</h3>
+      <div id="rating-filters">
+        <label><input type="radio" name="rating" value="0" checked> All</label>
+        <label><input type="radio" name="rating" value="4"> ★★★★ & up</label>
+        <label><input type="radio" name="rating" value="3"> ★★★ & up</label>
+      </div>
+
+      <h3>Availability</h3>
+      <label><input type="checkbox" id="in-stock-only"> In Stock Only</label>
+    </aside>
+
+    <section class="shop-main">
+      <div class="sort-bar">
+        <select id="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price — Low to High</option>
+          <option value="price-high">Price — High to Low</option>
+          <option value="newest">Newest</option>
+          <option value="rating">Rating</option>
+          <option value="popularity">Popularity</option>
+        </select>
+      </div>
+
+      <div class="product-grid" id="all-products"></div>
+    </section>
+
+  </div>
+</main>
+
+  <footer>
+    <p>&copy; 2026 UrbanCart. All rights reserved.</p>
+    <p>Email: support@urbancart.com | Phone: +91 98765 43210</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+
+
+ <script src="js/products.js" defer></script>
+<script src="js/cart.js" defer></script>
+<script src="js/wishlist.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>

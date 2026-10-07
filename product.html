@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | UrbanCart</title>
+  <meta name="description" content="View full product details, images, specifications and reviews on UrbanCart.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%230f766e%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2260%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22%3EU%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">UrbanCart</a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    <nav id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="shop.html">Offers</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <input type="search" id="global-search" placeholder="Search products...">
+      <a href="account.html">Account</a>
+      <a href="wishlist.html">Wishlist <span id="wishlist-count" class="badge">0</span></a>
+      <a href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="product-page container" id="product-page">
+      <div class="gallery">
+        <img id="main-image" src="" alt="" class="main-image">
+        <div class="thumbnails" id="thumbnails"></div>
+      </div>
+      <div class="product-info">
+        <h1 id="p-name"></h1>
+        <p class="card-rating" id="p-rating"></p>
+        <p class="card-price" id="p-price"></p>
+        <p class="stock" id="p-stock"></p>
+        <p id="p-desc"></p>
+        <h3>Specifications</h3>
+        <ul id="p-specs"></ul>
+        <div class="qty-selector">
+          <button id="qty-minus">-</button>
+          <span id="qty-value">1</span>
+          <button id="qty-plus">+</button>
+        </div>
+        <div class="product-actions">
+          <button class="btn" id="add-to-cart-btn">Add to Cart</button>
+          <button class="btn btn-outline" id="buy-now-btn">Buy Now</button>
+          <button class="wishlist-btn" id="wishlist-toggle-btn">♡</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="container" id="recently-viewed-section" style="display:none">
+      <h2>Recently Viewed</h2>
+      <div class="product-grid" id="recently-viewed"></div>
+    </section>
+
+    <div class="zoom-overlay" id="zoom-overlay">
+      <span class="zoom-close" id="zoom-close">&times;</span>
+      <img id="zoom-image" src="" alt="">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 UrbanCart. All rights reserved.</p>
+    <p>Email: support@urbancart.com | Phone: +91 98765 43210 | Address: 12 MG Road, Bengaluru, India</p>
+    <div class="social">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/wishlist.js" defer></script>
+  <script src="js/product-details.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
