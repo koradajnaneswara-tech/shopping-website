@@ -3,7 +3,7 @@
 A complete, responsive, frontend-only e-commerce website built as a web development internship project. UrbanCart lets customers browse products, search and filter, manage a cart and wishlist, and complete a simulated checkout — all using plain HTML, CSS and JavaScript with LocalStorage for data persistence.
 
 ## Live Demo
-*(Add your GitHub Pages link here once deployed — see Deployment below)*
+https://koradajnaneswara-tech.github.io/shopping-website/
 
 ## Features
 
